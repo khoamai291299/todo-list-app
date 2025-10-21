@@ -5,9 +5,18 @@ def add_task(task_name):
     tasks.append(task_name)
     print(f"Đã thêm công việc: '{task_name}'")
 
+def list_task(tasks):
+    for i in range(len(tasks)):
+        print(f'{i+1}. {tasks[i]}')
+
 # --- Điểm bắt đầu của chương trình ---
 if __name__ == "__main__":
     print("Chào mừng đến với ứng dụng To-Do List!")
     add_task("Học bài Git và GitHub")
     add_task("Làm bài tập thực hành ở nhà")
-    
+    add_task("Học bài Git")
+    add_task("Làm bài tập")
+
+    list_task(tasks)
+
+
